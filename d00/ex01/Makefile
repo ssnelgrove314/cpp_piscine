@@ -1,13 +1,14 @@
 #name
 NAME		:= phonebook
 
-#src and obj
-SRCS		:= megaphone.cpp
-OBJS		:= $(SRCS:.cpp=.o)
-
 # Define all the compiling flags
 CXX			:= clang++
-CXXFLAGS	:= -Wall -Werror -Wextra -g
+CXXFLAGS	:= -Wall -Werror -Wextra -Iinclude -g
+
+#src and obj
+SRCS		:= $(wildcard src/*.cpp)
+
+OBJS		:= $(SRCS:.cpp=.o)
 
 #compile and create everything
 all: $(NAME)
