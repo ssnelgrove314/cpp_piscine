@@ -3,7 +3,7 @@ NAME		:= Account
 
 # Define all the compiling flags
 CXX			:= clang++
-CXXFLAGS	:= -Wall -Werror -Wextra -I. -g
+CXXFLAGS	:= -Wall -Werror -Wextra -I.
 
 #src and obj
 SRCS		:= $(wildcard *.cpp)
