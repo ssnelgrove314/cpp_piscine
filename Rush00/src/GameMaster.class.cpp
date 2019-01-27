@@ -4,7 +4,6 @@
 GameMaster::GameMaster()
 {
     this->initialize_game();
-    this->execution_loop();
 }
 
 GameMaster::~GameMaster()

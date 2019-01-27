@@ -7,4 +7,6 @@
 int main(int argc, char const*argv[])
 {
     GameMaster master;
+    master.initialize_game();
+    master.execution_loop();
 }
