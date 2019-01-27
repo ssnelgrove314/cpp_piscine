@@ -1,6 +1,10 @@
 #ifndef SIMODEL_HPP
 #define SIMODEL_HPP
 
+#include "GameObject.class.hpp"
+#include "Player.class.hpp"
+#include "Projectile.class.hpp"
+#include "Alien.class.hpp"
 #include <string>
 
 enum GameState{
@@ -15,7 +19,10 @@ class Model
 {
     int m_nrows;
     int m_ncols;
-    GameState m_state;
+    static GameState m_state;
+    Player player;
+    Alien *aliens;
+    Projectile *crossfire;
 public:
     Model(int nrows, int ncols);
     Model();

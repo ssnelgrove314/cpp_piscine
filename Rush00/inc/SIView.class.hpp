@@ -3,6 +3,7 @@
 
 #include "SIModel.class.hpp"
 #include <ncurses.h>
+#include <unistd.h>
 
 class View
 {
@@ -11,7 +12,7 @@ public:
     View();
     ~View();
     //update function
-    void setModel(const Model &model);
+    void setModel_moveAll(const Model &model);
     //paint function
     void render();
 private:
